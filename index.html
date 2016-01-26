@@ -9,6 +9,41 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="text/javascript">
+
+            // Defer js files
+            var jqueryJsEl, mainJsEl;
+
+            function appendJS(src, loadCb) {
+                var scriptEl = document.createElement('script');
+                    scriptEl.onload = loadCb;
+                    scriptEl.setAttribute('src', src);
+                    scriptEl.setAttribute('type','text/javascript');
+                document.getElementsByTagName('head')[0].appendChild(scriptEl);
+                return scriptEl;
+            }
+
+            function loadJsScripts() {
+                appendJS('https://code.jquery.com/jquery-2.1.4.min.js', function() {
+                    alert('jQuery loaded.');
+
+                    appendJS('/js/main.js', function() {
+                        alert('Main JS loaded.');
+                    });
+                });
+            }
+            
+            if (window.addEventListener) {
+                window.addEventListener('load', loadJsScripts, false);
+            } else if (window.attachEvent) {
+                window.attachEvent('onload', loadJsScripts);
+            } else {
+                window.onload = loadJsScripts;
+            }
+
+        </script>
+
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="styles/main.css">
@@ -49,7 +84,5 @@
 
         </div><!-- /.container -->
 
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="js/main.js"></script>
     </body>
 </html>
