@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['assets/scss/**/*.scss'],
-                tasks: ['sass:dev', 'autoprefixer']
+                tasks: ['sass:dev']
             },
             js: {
                 files: 'assets/js/**/*.js',
@@ -116,7 +116,7 @@ module.exports = function(grunt) {
     });
 
     // register tasks
-    grunt.registerTask('default', ['clean', 'sass:dev', 'autoprefixer', 'concat:dev', 'copy', 'watch']);
+    grunt.registerTask('default', ['clean', 'sass:dev', 'concat:dev', 'copy', 'watch']);
     grunt.registerTask('prod', ['clean', 'sass:prod', 'autoprefixer', 'uglify:main', 'copy']);
 
 };

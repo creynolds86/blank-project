@@ -1,0 +1,12 @@
+
+/*=> Styles - Typography
+--------------------------------------------------*/
+
+p {
+    width: 70%; /* No more than 15 characters perline */
+}
+p.text-center {
+    @extend p;
+    margin: 0 auto;
+}
+
