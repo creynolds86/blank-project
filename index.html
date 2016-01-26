@@ -26,10 +26,10 @@
 
             function loadJsScripts() {
                 appendJS('https://code.jquery.com/jquery-2.1.4.min.js', function() {
-                    alert('jQuery loaded.');
+                    console.info('jQuery loaded.');
 
                     appendJS('/js/main.js', function() {
-                        alert('Main JS loaded.');
+                        console.info('Main JS loaded.');
                     });
                 });
             }
