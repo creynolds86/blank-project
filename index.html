@@ -15,9 +15,9 @@
         // Defer js files
         var jqueryJsEl, mainJsEl;
 
-        function appendJS(src, loadCb) {
+        function appendJS(src, onLoadCb) {
             var scriptEl = document.createElement('script');
-                scriptEl.onload = loadCb;
+                scriptEl.onload = onLoadCb;
                 scriptEl.setAttribute('src', src);
                 scriptEl.setAttribute('type','text/javascript');
             document.getElementsByTagName('head')[0].appendChild(scriptEl);
@@ -78,80 +78,131 @@
 
     <main id="content" role="main">
 
-      <header class="container jumbotron">
+      <div class="container">
 
-        <h1 class="text-center">Lorum ipsum dolor sit amet</h1>
-        <p class="lead text-center">Donec sit amet ipsum velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum viverra enim eu ipsum hendrerit, et dictum libero fermentum. Aliquam placerat lobortis felis eget imperdiet. Duis efficitur ipsum felis, eu aliquet diam vestibulum eu. Nulla facilisis nisl ut purus maximus feugiat. Etiam sollicitudin est nec ex varius mattis.</p>
+        <header class="jumbotron">
 
-      </header>
-
-      <section class="drop">
-
-        <header class="container">
-
-          <h2>Bootstrap starter template</h2>
-          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+          <h1 class="text-center">Lorum ipsum dolor sit amet</h1>
+          <p class="lead text-center">Donec sit amet ipsum velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum viverra enim eu ipsum hendrerit, et dictum libero fermentum. Aliquam placerat lobortis felis eget imperdiet. Duis efficitur ipsum felis, eu aliquet diam vestibulum eu. Nulla facilisis nisl ut purus maximus feugiat. Etiam sollicitudin est nec ex varius mattis.</p>
 
         </header>
 
+      </div><!-- /.container -->
+
+      <section class="drop">
+
+        <div class="container">
+          <div class="row">
+            <header>
+              <h2>Bootstrap starter template</h2>
+              <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+            </header>
+          </div><!-- /.row -->
+
+          <div class="flex-container">
+            <ul class="tick flex-container__column">
+              <li>Maecenas porta urna in urna molestie suscipit.</li>
+              <li>Aenean vehicula quam vitae sapien cursus, sit amet venenatis sapien gravida.</li>
+              <li>Aliquam sed odio nec neque tempus commodo.</li>
+              <li>Sed consectetur risus cursus libero eleifend, vitae rutrum lorem blandit.</li>
+              <li>Nunc ut mauris fringilla, pharetra arcu eget, convallis enim.</li>
+            </ul>
+            <ul class="cross flex-container__column">
+              <li>Nullam faucibus ante at augue laoreet dignissim.</li>
+              <li>Nam vel augue et nulla ullamcorper aliquet.</li>
+              <li>Aenean non sem vitae sem mattis interdum.</li>
+              <li>Proin dapibus purus in dui aliquam, sed viverra purus iaculis.</li>
+            </ul>
+          </div>
+        </div><!-- /.container -->
       </section>
 
       <section class="marker">
 
-        <header class="container">
+        <div class="container">
+          <header>
+            <h2>Bootstrap starter template</h2>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+          </header>
 
-          <h2>Bootstrap starter template</h2>
-          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+          <div class="flex-container">
+            <ul class="tick flex-container__column">
+              <li>Maecenas porta urna in urna molestie suscipit.</li>
+              <li>Aenean vehicula quam vitae sapien cursus, sit amet venenatis sapien gravida.</li>
+              <li>Aliquam sed odio nec neque tempus commodo.</li>
+              <li>Sed consectetur risus cursus libero eleifend, vitae rutrum lorem blandit.</li>
+              <li>Nunc ut mauris fringilla, pharetra arcu eget, convallis enim.</li>
+            </ul>
+            <ul class="tick flex-container__column">
+              <li>Nullam faucibus ante at augue laoreet dignissim.</li>
+              <li>Nam vel augue et nulla ullamcorper aliquet.</li>
+              <li>Aenean non sem vitae sem mattis interdum.</li>
+              <li>Proin dapibus purus in dui aliquam, sed viverra purus iaculis.</li>
+            </ul>
+            <ul class="tick flex-container__column">
+              <li>Curabitur tempus dolor et hendrerit vulputate.</li>
+              <li>Vivamus et eros eget urna porta cursus sit amet sed dolor.</li>
+              <li>Vivamus sodales sem ut tortor malesuada, quis aliquam ipsum accumsan.</li>
+              <li>Praesent viverra nisi eget metus dapibus lacinia.</li>
+            </ul>
+          </div><!-- /.flex-container -->
+        </div><!-- /.container -->
 
-        </header>
+      </section>
+
+      <section class="globe">
+
+        <div class="container">
+          <header>
+
+            <h2>Bootstrap starter template</h2>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+
+          </header>
+        </div><!-- /.container -->
 
       </section>
 
       <section>
 
-        <header class="container" class="globe">
+        <div class="container">
+          <header>
 
-          <h2>Bootstrap starter template</h2>
-          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+            <h2>Bootstrap starter template</h2>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
 
-        </header>
-
-      </section>
-
-      <section>
-
-        <header class="container">
-
-          <h2>Bootstrap starter template</h2>
-          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-
-        </header>
+          </header>
+        </div>
 
       </section>
 
       <section>
 
-        <header class="container">
+        <div class="container">
+          <header>
 
-          <h2>Bootstrap starter template</h2>
-          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+            <h2>Bootstrap starter template</h2>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
 
-        </header>
+          </header>
+        </div><!-- /.container -->
 
       </section>
 
       <section>
 
-        <header class="container">
+        <div class="container">
+          <header>
 
-          <h2>Bootstrap starter template</h2>
-          <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+            <h2>Bootstrap starter template</h2>
+            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
 
-        </header>
+          </header>
+        </div><!-- /.container -->
 
       </section>
 
-    </main><!-- /.container -->
+    </main>
 
     <footer>
       <p class="text-center">This is footer text</p>

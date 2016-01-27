@@ -1,6 +1,7 @@
 
 @import "bootstrap";
 @import "partials/_variables";
+@import "partials/_placeholders";
 @import "partials/_typography";
 
 /*=> Styles
@@ -69,28 +70,22 @@ body {
         }
     }
     > section:nth-child(3n+2) {
-        background-color: $brand-light;
-    }
-    > section:nth-child(3n+3) {
         background-color: $brand-dark;
         color: $brand-light;
     }
-    > section:nth-child(3n+4) {
+    > section:nth-child(3n+3) {
         background-color: $brand-primary;
         color: $brand-light;
+    }
+    > section:nth-child(3n+4) {
+        background-color: $brand-light;
     }
     > section {
 
         & h2:before {
-            position: relative;
+            @extend %icon;
             top: 0;
-            right: 150px;
-            float: right;
-            display: inline-block;
-            font-family: 'Glyphicons Halflings';
-            font-style: normal;
-            font-weight: normal;
-            line-height: 1;            
+            float: right;            
             font-size: 100px;
         }
         &.drop h2:before {
@@ -102,6 +97,30 @@ body {
         &.globe h2:before {
             content: '\e135'
         }
+    }
+    ul {
+        padding: 0;
+    }
+    .flex-container ul {
+        flex-grow: 1;
+        margin: $gutter $gutter 0 $gutter;
+    }
+    ul[class] li {
+        margin-bottom: ceil($gutter-half / 2);
+        list-style-type: none;
+    }
+    ul.tick li:before,
+    ul.cross li:before {
+        @extend %bullet;
+    }
+    ul.tick li:before {
+        content: '\e013';
+    }
+    ul.cross li:before {
+        content: '\e014';
+    }
+    p.lead {
+        margin-bottom: $gutter-half;
     }
 }
 
