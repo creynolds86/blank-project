@@ -59,14 +59,10 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Project name</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse pull-right">
+        <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -162,50 +158,43 @@
         </div><!-- /.container -->
 
       </section>
-
-      <section>
-
-        <div class="container">
-          <header>
-
-            <h2>Bootstrap starter template</h2>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-
-          </header>
-        </div>
-
-      </section>
-
-      <section>
-
-        <div class="container">
-          <header>
-
-            <h2>Bootstrap starter template</h2>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-
-          </header>
-        </div><!-- /.container -->
-
-      </section>
-
-      <section>
-
-        <div class="container">
-          <header>
-
-            <h2>Bootstrap starter template</h2>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-
-          </header>
-        </div><!-- /.container -->
-
-      </section>
-
     </main>
 
     <footer>
-      <p class="text-center">This is footer text</p>
+      <div class="container">
+        <div class="flex-container">
+          <section class="about flex-container__column">
+            <h2>About the author</h2>
+            <h3>Leeroy Jenkins</h3>
+            <img src="http://gravatar.com/avatar/9a6f40b345702ccda3021768fbf1c959" alt="Leeroy Jenkins">
+            <p>Sed consectetur risus cursus libero eleifend, vitae rutrum lorem blandit.</p>
+          </section>
+          <section class="footer-nav flex-container__column">
+            <h2>Navigation</h2>
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </section>
+          <section class="social flex-container__column">
+            <h2>Social Media</h2>
+            <ul>
+              <li><a href="#" class="icon facebook">Facebook</a></li>
+              <li><a href="#" class="icon twitter">Twitter</a></li>
+              <li><a href="#" class="icon github">Github</a></li>
+            </ul>
+          </section>
+        </div><!-- /.flex-container -->
+        <div class="social">
+            <h2>Join me on</h2>
+            <ul class="flex-container">
+              <li class="flex-container__column"><a href="#" title="Facebook" class="icon large facebook"><span class="sr-only">Facebook</span></a></li>
+              <li class="flex-container__column"><a href="#" title="Twitter" class="icon large twitter"><span class="sr-only">Twitter</span></a></li>
+              <li class="flex-container__column"><a href="#" title="Github" class="icon large github"><span class="sr-only">Github</span></a></li>
+            </ul>
+          </div>
+      </div><!-- /.container -->
     </footer>
 
   </body>

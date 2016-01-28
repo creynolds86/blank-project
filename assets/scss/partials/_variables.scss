@@ -31,14 +31,14 @@ $hero-unit-alpha:           .25;
 /*=> Variables - Measurements
 --------------------------------------------------*/
 
-$gutter:                    30px;
-$gutter-half:               $gutter / 2;
+$gutter:                    30px !default;
+$gutter-half:               $gutter / 2 !default;
 
 
 /*=> Variables - Navigation
 --------------------------------------------------*/
 
-$navbar-default-color: $brand-primary !default;
+$navbar-default-color:      $brand-primary !default;
 
 
 /*=> Variables - Main content
@@ -47,13 +47,14 @@ $navbar-default-color: $brand-primary !default;
 /*=> Variables - Main content > Colours
 --------------------------------------------------*/
 
-$body-text-colour: $brand-font-colour;
+$body-text-colour:          $brand-font-colour;
+$muted-text-colour:         $brand-font-colour-light;
 
 
 /*=> Variables - Main content > Hero unit
 --------------------------------------------------*/
 
-$hero-unit-bg: $brand-primary;
+$hero-unit-bg:              $brand-primary;
 
 
 /*=> Variables - Footer
@@ -61,5 +62,8 @@ $hero-unit-bg: $brand-primary;
 
 /*=> Variables - Footer > Colours
 --------------------------------------------------*/
-$footer-colour: $brand-light;
-$footer-text-colour: $brand-primary;
+$footer-colour:             $brand-light;
+$footer-text-colour:        $text-color;
+
+$facebook-colour:           #3b5998;
+$twitter-colour:            #00aced;

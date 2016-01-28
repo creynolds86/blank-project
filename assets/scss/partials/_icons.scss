@@ -1,0 +1,30 @@
+
+/*=> Styles - Icons
+--------------------------------------------------*/
+
+/*=> Styles - Icons > Social media
+--------------------------------------------------*/
+
+.icon {
+    list-style-type: none;
+
+    &.large:before {
+        font-size: 5em;
+    }
+
+    &:before {
+        @extend %bullet;
+    }
+    &.facebook:before {
+        content: $fa-var-facebook-official;
+    }
+    &.twitter:before {
+        content: $fa-var-twitter;
+    }
+    &.google-plus:before {
+        content: $fa-var-google-plus;
+    }
+    &.github:before {
+        content: $fa-var-github;
+    }
+}

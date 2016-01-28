@@ -5,11 +5,8 @@
 /*=> Styles - Placeholders > Icons
 --------------------------------------------------*/
 
-%icon {
-    @include fa-icon();
-}
 %bullet {
-    @extend %icon;
+    @include fa-icon();
     float: left;
     margin-top: 3px;
     margin-left: -$gutter;
