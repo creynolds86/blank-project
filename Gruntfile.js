@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['assets/scss/**/*.scss'],
-                tasks: ['sass:dev', 'autoprefixer']
+                tasks: ['sass:dev']
             },
             js: {
                 files: 'assets/js/**/*.js',
@@ -110,13 +110,20 @@ module.exports = function(grunt) {
                 dest: 'dist/fonts/bootstrap',
                 filter: 'isFile',
                 flatten: true
+            },
+            fafonts: {
+                expand: true,
+                src: ['assets/fonts/font-awesome/*'],
+                dest: 'dist/fonts/font-awesome',
+                filter: 'isFile',
+                flatten: true
             }
         },
 
     });
 
     // register tasks
-    grunt.registerTask('default', ['clean', 'sass:dev', 'autoprefixer', 'concat:dev', 'copy', 'watch']);
+    grunt.registerTask('default', ['clean', 'sass:dev', 'concat:dev', 'copy', 'watch']);
     grunt.registerTask('prod', ['clean', 'sass:prod', 'autoprefixer', 'uglify:main', 'copy']);
 
 };
