@@ -29,6 +29,13 @@ body {
 
     &__column {
         flex-direction: column;
+
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
     }
     &__row {
         flex-direction: row;
@@ -160,7 +167,7 @@ footer {
         list-style-type: none;
     }
     section.social ul {
-        margin-left: $gutter;
+        padding-left: $gutter;
     }
     div.social h2 {
         text-align: center;
