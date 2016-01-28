@@ -104,13 +104,6 @@ module.exports = function(grunt) {
                 filter: 'isFile',
                 flatten: true
             },
-            tbsfonts: {
-                expand: true,
-                src: ['assets/fonts/bootstrap/*'],
-                dest: 'dist/fonts/bootstrap',
-                filter: 'isFile',
-                flatten: true
-            },
             fafonts: {
                 expand: true,
                 src: ['assets/fonts/font-awesome/*'],

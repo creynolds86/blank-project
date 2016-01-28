@@ -1,0 +1,22 @@
+
+/*=> Styles - Placeholders
+--------------------------------------------------*/
+
+/*=> Styles - Placeholders > Icons
+--------------------------------------------------*/
+
+%icon {
+    position: relative;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+}
+%bullet {
+    @extend %icon;
+    float: left;
+    margin-top: 3px;
+    margin-left: -$gutter;
+    font-size: 14px;
+}
