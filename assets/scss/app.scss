@@ -1,5 +1,6 @@
 
 @import "bootstrap";
+@import "font-awesome/font-awesome";
 @import "partials/_variables";
 @import "partials/_placeholders";
 @import "partials/_typography";
@@ -88,14 +89,14 @@ body {
             float: right;            
             font-size: 100px;
         }
-        &.drop h2:before {
-            content: '\e064';
+        &.steam h2:before {
+            content: $fa-var-steam;
         }
         &.marker h2:before {
-            content: '\e062';
+            content: $fa-var-map-marker;
         }
         &.globe h2:before {
-            content: '\e135'
+            content: $fa-var-globe;
         }
     }
     ul {
@@ -114,10 +115,10 @@ body {
         @extend %bullet;
     }
     ul.tick li:before {
-        content: '\e013';
+        content: $fa-var-check;
     }
     ul.cross li:before {
-        content: '\e014';
+        content: $fa-var-remove;
     }
     p.lead {
         margin-bottom: $gutter-half;

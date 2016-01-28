@@ -1,17 +1,12 @@
 
-/*=> Placeholders
+/*=> Styles - Placeholders
 --------------------------------------------------*/
 
-/*=> Placeholders > Icons
+/*=> Styles - Placeholders > Icons
 --------------------------------------------------*/
 
 %icon {
-    position: relative;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
+    @include fa-icon();
 }
 %bullet {
     @extend %icon;
