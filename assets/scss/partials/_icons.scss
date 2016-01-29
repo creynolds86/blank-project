@@ -2,29 +2,58 @@
 /*=> Styles - Icons
 --------------------------------------------------*/
 
-/*=> Styles - Icons > Social media
---------------------------------------------------*/
-
-.icon {
+li.icon {
     list-style-type: none;
+}
 
-    &.large:before {
-        font-size: 5em;
-    }
+.icon,
+a.icon { // So link colours are applied
 
     &:before {
         @extend %bullet;
+        margin-top: -1px;
+        color: $muted-text-colour;
+        font-size: $icon-size-default;
     }
-    &.facebook:before {
-        content: $fa-var-facebook-official;
+    &:hover:before {
+        color: $body-text-colour;
     }
-    &.twitter:before {
-        content: $fa-var-twitter;
+
+    &.small:before {
+        font-size: $icon-size-small;
     }
-    &.google-plus:before {
-        content: $fa-var-google-plus;
+    &.medium:before {
+        font-size: $icon-size-medium;
+    }
+    &.large:before {
+        font-size: $icon-size-large;
+    }
+
+    &.facebook {
+        &:before {
+            content: $fa-var-facebook-official;
+        }
+        &:hover:before {
+            color: $facebook-colour;
+        }
+    }
+    &.twitter {
+        &:before {
+            content: $fa-var-twitter;
+        }
+        &:hover:before {
+            color: $twitter-colour;
+        }
     }
     &.github:before {
         content: $fa-var-github;
     }
+}
+
+
+/*=> Styles - Icons > Social media
+--------------------------------------------------*/
+
+.social .icon:before {
+    transition: color $animation-fade-time $animation-fade-type;
 }

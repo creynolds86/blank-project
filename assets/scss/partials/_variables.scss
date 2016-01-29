@@ -35,6 +35,22 @@ $gutter:                    30px !default;
 $gutter-half:               $gutter / 2 !default;
 
 
+/*=> Variables - Animations
+--------------------------------------------------*/
+
+$animation-fade-time:       .2s;
+$animation-fade-type:       ease-in;
+
+
+/*=> Variables - Icons
+--------------------------------------------------*/
+
+$icon-size-default:         1.5em;
+$icon-size-small:           1em;
+$icon-size-medium:          3em;
+$icon-size-large:           5em;
+
+
 /*=> Variables - Navigation
 --------------------------------------------------*/
 
