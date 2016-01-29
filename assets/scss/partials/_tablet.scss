@@ -2,6 +2,19 @@
 /*=> Styles - Tablet
 --------------------------------------------------*/
 
-#content {
+@media (min-width: $screen-sm-min) {
+    #content {
+        background-color: red;
 
+        .flex-container ul {
+            margin-bottom: $gutter;
+        }
+    }
+    .flex-container {
+        @include flex-container();
+        @include flex-columns();
+    }
+    .social li {
+        max-width: 100% / 3;
+    }
 }

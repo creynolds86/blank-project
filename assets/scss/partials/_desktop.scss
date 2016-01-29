@@ -2,15 +2,27 @@
 /*=> Styles - Desktop
 --------------------------------------------------*/
 
-#content {
-
+@media screen and (min-width: $screen-md-min) {
+    #content {
+        background-color: yellow;
+    }
+    .flex-container {
+        @include flex-container();
+        @include flex-columns();
+    }
 }
+
 
 
 /*=> Styles - Desktop > Large
 --------------------------------------------------*/
 
-#content {
-    
+@media screen and (min-width: $screen-lg-min) {
+    #content {
+       background-color: green;
+    }
+    .flex-container {
+        @include flex-container();
+        @include flex-columns();
+    }
 }
-

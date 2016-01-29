@@ -1,0 +1,36 @@
+
+/*=> Styles - Mixins
+--------------------------------------------------*/
+@mixin flex-container() {
+    display: flex;
+    align-items: stretch;
+}
+
+@mixin flex-columns() {
+    flex-direction: row;
+
+    :first-child {
+        margin-left: 0;
+    }
+    :last-child {
+        margin-right: 0;
+    }
+}
+
+@mixin flex-rows() {
+    flex-direction: column;
+
+    :first-child {
+        margin-top: 0;
+    }
+    :last-child {
+        margin-bottom: 0;
+    }
+
+    &.left {
+        justify-content: flex-start;
+    }
+    &.right {
+        justify-content: flex-end;
+    }
+}

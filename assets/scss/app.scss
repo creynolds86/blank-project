@@ -3,10 +3,11 @@
 @import "font-awesome/font-awesome";
 @import "partials/_variables";
 @import "partials/_placeholders";
+@import "partials/_mixins";
 @import "partials/_icons";
 @import "partials/_typography";
-@import "partials/_tablet";
-@import "partials/_desktop";
+
+// Mobile styles override since they come after the tablet/desktop styles!!!
 
 /*=> Styles
 --------------------------------------------------*/
@@ -26,28 +27,8 @@ body {
 --------------------------------------------------*/
 
 .flex-container {
-    display: flex;
-    align-items: stretch;
-
-    &__column {
-        flex-direction: column;
-
-        &:first-child {
-            margin-left: 0;
-        }
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-    &__row {
-        flex-direction: row;
-    }
-    &__row--left {
-        justify-content: flex-start;
-    }
-    &__row--right {
-        justify-content: flex-end;
-    }
+    @include flex-container();
+    @include flex-rows();
 }
 
 
@@ -93,6 +74,9 @@ body {
 }
 
 #content {
+    .jumbotron {
+        background-color: transparent;
+    }
     > section {
         padding: $gutter;
 
@@ -133,8 +117,7 @@ body {
         }
     }
     .flex-container ul {
-        flex-grow: 1;
-        margin: $gutter;
+        margin: $gutter $gutter $gutter-half $gutter;
     }
     ul[class] li {
         margin-bottom: ceil($gutter-half / 2);
@@ -161,7 +144,8 @@ footer {
 
     section {
         margin-right: $gutter;
-        width: calc(100% / 3);
+        padding: $gutter-half $gutter;
+        flex: 1 100%;
 
         &:last-child {
             margin-right: 0;
@@ -205,6 +189,13 @@ footer {
 /*=> Styles - Social
 --------------------------------------------------*/
 
-.social ul li {
-    margin-bottom: $gutter-half / 3;
+html .social .flex-container {
+    @include flex-columns();
+
+    li {
+        margin-bottom: $gutter-half / 3;
+    }
 }
+
+@import "partials/_tablet";
+@import "partials/_desktop";
