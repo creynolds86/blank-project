@@ -5,6 +5,8 @@
 @import "partials/_placeholders";
 @import "partials/_icons";
 @import "partials/_typography";
+@import "partials/_tablet";
+@import "partials/_desktop";
 
 /*=> Styles
 --------------------------------------------------*/
@@ -48,6 +50,7 @@ body {
     }
 }
 
+
 /*=> Styles - Navigation
 --------------------------------------------------*/
 
@@ -72,6 +75,7 @@ body > nav.navbar {
         float: right;
     }
 }
+
 
 /*=> Styles - Content
 --------------------------------------------------*/
