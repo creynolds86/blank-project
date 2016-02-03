@@ -103,7 +103,8 @@ body {
         h2:before {
             @include fa-icon();
             top: 0;
-            float: right;            
+            float: right;
+            margin-left: $gutter-half;      
             font-size: 100px;
         }
         &.steam h2:before {
@@ -117,7 +118,7 @@ body {
         }
     }
     .flex-container ul {
-        margin: $gutter $gutter $gutter-half $gutter;
+        margin: $gutter-half $gutter;
     }
     ul[class] li {
         margin-bottom: ceil($gutter-half / 2);

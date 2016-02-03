@@ -5,6 +5,10 @@
 @media screen and (min-width: $screen-md-min) {
     #content {
         background-color: yellow;
+        
+        .flex-container ul {
+            margin: $gutter;
+        }
     }
     .flex-container {
         @include flex-container();
