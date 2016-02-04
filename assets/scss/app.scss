@@ -37,7 +37,7 @@ body {
 
 body > nav.navbar {
     font-weight: $brand-font-weight-bold;
-    border-bottom: none;
+    border-color: $navbar-default-border;
 }
 .navbar-fixed-top, footer {
     background-color: $body-bg;
