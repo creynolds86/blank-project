@@ -4,6 +4,10 @@
 
 (function($) {
 
-    // Custom Javascript code goes here 
+    $(function() {
+
+        // Custom Javascript code goes here
+
+    });
 
 })(jQuery || window.jQuery);
